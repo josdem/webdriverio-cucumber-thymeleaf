@@ -3,6 +3,7 @@ const { Given, When, Then } = require("@cucumber/cucumber")
 const OrderPage = require("../pageobjects/order.page")
 const SearchPage = require("../pageobjects/search.page")
 const EntreePage = require("../pageobjects/entree.page")
+const CheckoutPage = require("../pageobjects/checkout.page")
 
 Given("A order page as {string}", async (string) => {
   await OrderPage.open(string)
@@ -18,5 +19,5 @@ When("I select pizza", async () => {
 })
 
 Then("I validate items", async () => {
-  return "pending"
+  await CheckoutPage.validateItem()
 })
