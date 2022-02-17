@@ -1,6 +1,7 @@
 const { Given, When, Then } = require("@cucumber/cucumber")
 
 const OrderPage = require("../pageobjects/order.page")
+const SearchPage = require("../pageobjects/search.page")
 
 Given("A order page as {string}", async (string) => {
   await OrderPage.open(string)
@@ -8,7 +9,7 @@ Given("A order page as {string}", async (string) => {
 })
 
 When("I enter customer information", async () => {
-  return "pending"
+  await SearchPage.selectDriveUpCarryout()
 })
 
 When("I select pizza", async () => {
