@@ -1,0 +1,31 @@
+{
+  "name": "webdriverio-cucumber-workshop",
+  "version": "1.0.0",
+  "description": "A cool automation framework with Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josdem/webdriverio-cucumber-workshop.git"
+  },
+  "keywords": [
+    "webdriverio"
+  ],
+  "author": "josdem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josdem/webdriverio-cucumber-workshop/issues"
+  },
+  "homepage": "https://github.com/josdem/webdriverio-cucumber-workshop#readme",
+  "devDependencies": {
+    "@wdio/cli": "^7.16.15",
+    "@wdio/cucumber-framework": "^7.16.14",
+    "@wdio/local-runner": "^7.16.15",
+    "@wdio/spec-reporter": "^7.16.14",
+    "chromedriver": "^98.0.1",
+    "prettier": "^2.5.1",
+    "wdio-chromedriver-service": "^7.2.8"
+  }
+}
