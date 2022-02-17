@@ -1,15 +1,21 @@
 const { Given, When, Then } = require("@cucumber/cucumber")
 
-let title
+Given('A order page as {string}', function (string) {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
 
-Given("A webpage as {string}", async (keyword) => {
-  browser.url(keyword)
-})
+When('I enter customer information', function () {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
 
-When("I get page title", async () => {
-  title = browser.getTitle()
-})
+When('I select pizza', function () {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
 
-Then("I validate title is {string}", async (title) => {
-  expect(title === "josdem").toBeTruthy()
-})
+Then('I validate items', function () {
+  // Write code here that turns the phrase above into concrete actions
+  return 'pending';
+});
