@@ -1,21 +1,20 @@
 const { Given, When, Then } = require("@cucumber/cucumber")
 
-Given('A order page as {string}', function (string) {
-  // Write code here that turns the phrase above into concrete actions
-  return 'pending';
-});
+const OrderPage = require("../pageobjects/order.page")
 
-When('I enter customer information', function () {
-  // Write code here that turns the phrase above into concrete actions
-  return 'pending';
-});
+Given("A order page as {string}", async (string) => {
+  await OrderPage.open(string)
+  await OrderPage.selectZipCodeCityAndState()
+})
 
-When('I select pizza', function () {
-  // Write code here that turns the phrase above into concrete actions
-  return 'pending';
-});
+When("I enter customer information", async () => {
+  return "pending"
+})
 
-Then('I validate items', function () {
-  // Write code here that turns the phrase above into concrete actions
-  return 'pending';
-});
+When("I select pizza", async () => {
+  return "pending"
+})
+
+Then("I validate items", async () => {
+  return "pending"
+})
